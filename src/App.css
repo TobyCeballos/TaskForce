@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+section {
+    padding-left: 100px;
+}
+
+.home {
+    font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+    font-weight: 500;
+}
+
+.tf-text-gold-1 {
+    color: #e8b34b;
+}
+.tf-text-gold-2 {
+    color: #755a22;
+}
+
+.tf-text-large {
+    line-height: 10px;
+    font-size: 120px;
+}
+
+.gold-task-force {
+    background: #e8b34b;
+}
+
+.swiper-button-disabled {
+    display: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    left: 50%;
+    transform: rotate(90deg);
+}
+
+
+.swiper-pagination-bullet {
+    background: #fdba74;
+}
+
+.home-image {
+    transform: rotate(-43deg);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #fdba74 !important;
+}
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip-content {
+    visibility: hidden;
+    background-color: #e8b34b ;
+    white-space: nowrap;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 125%; /* Posiciona el tooltip a la derecha del elemento */
+    transform: translate(0, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tooltip-content::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    margin-top: -5px; /* Ajusta la posición vertical del pico */
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent  #e8b34b transparent transparent; /* Ajusta el color del pico */
+  }
+  
+  .tooltip-container:hover .tooltip-content {
+    visibility: visible;
+    opacity: 1;
+  }
+  
